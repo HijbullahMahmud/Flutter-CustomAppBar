@@ -1,4 +1,7 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
+import 'package:fluttercustomappbar/screens/using_gradient.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -6,6 +9,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+
   @override
   void initState() {
     // TODO: implement initState
@@ -14,6 +18,13 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    /*timer to go to gradient screen after 5 seconds*/
+    Timer(
+      Duration(seconds: 5),
+        () => Navigator.of(context).pushReplacement(
+            MaterialPageRoute(builder: (BuildContext context) => GradientAppBar()))
+    );
+
     /*get the screen size of the device*/
     var divHeight = MediaQuery.of(context).size.height;
 

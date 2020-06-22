@@ -10,7 +10,7 @@ void main() {
         brightness: Brightness.light,
         primaryColor: Colors.blueAccent,
         accentColor: Colors.redAccent),
-    home: GradientAppBar(),
+    home: HomePage(),
   ));
 }
 

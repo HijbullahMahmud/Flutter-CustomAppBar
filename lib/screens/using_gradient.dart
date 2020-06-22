@@ -48,7 +48,7 @@ class _GradientAppBarState extends State<GradientAppBar> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
-                      Icon(Icons.list, color: Colors.white, size: 30, ),
+                      Icon(Icons.menu, color: Colors.white, size: 30, ),
                       Padding(
                         padding: const EdgeInsets.only(left: 10.0),
                         child: Text("App Name", style: TextStyle(color: Colors.white, fontSize: 25),),
